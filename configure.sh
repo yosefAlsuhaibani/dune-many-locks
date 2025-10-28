@@ -1,0 +1,10 @@
+os=$1
+arch=$(uname -m)
+case "$os-$arch" in
+   "win-x86_64")
+	ln -s dune-locks/win-x86 dune.lock;;
+   "mac-arm64")
+        ln -s dune-locks/mac-arm64 dune.lock;;
+   "ubuntu-x86")
+        ln -s dune-locks/ubuntu-x86 dune.lock;;
+esac
