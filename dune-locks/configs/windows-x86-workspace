@@ -7,6 +7,7 @@
   (solver_env
   (os win32)
   (os-distribution cygwin)
+  (os-family windows)
   (arch x86_64)
   )
 )
