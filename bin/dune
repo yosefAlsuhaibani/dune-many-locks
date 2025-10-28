@@ -1,4 +1,4 @@
 (executable
  (public_name bogus)
  (name main)
- (libraries bogus))
+ (libraries bogus eio_main))
