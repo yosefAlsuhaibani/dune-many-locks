@@ -1,8 +1,9 @@
 (lang dune 3.20)
 (context default)
 
-(pkg enbaled)
+(pkg enabled)
 (lock_dir
+  (path "dune-locks/ubuntu-x86")
   (solver_env
   (os linux)
   (os-family ubuntu)

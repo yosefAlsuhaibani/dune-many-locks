@@ -3,6 +3,7 @@
 
 (pkg enabled)
 (lock_dir
+  (path "dune-locks/win-x86")
   (solver_env
   (os win32)
   (os-distribution cygwin)

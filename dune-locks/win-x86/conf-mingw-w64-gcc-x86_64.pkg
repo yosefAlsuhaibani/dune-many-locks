@@ -1,0 +1,6 @@
+(version 1)
+
+(build
+ (run x86_64-w64-mingw32-gcc --version))
+
+(depexts mingw64-x86_64-gcc-core)

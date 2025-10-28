@@ -4,7 +4,7 @@
 (pkg enabled)
 
 (lock_dir
-  (path ./dune-locks/mac-arm)
+  (path "dune-locks/mac-arm")
   (solver_env
   (os macos)
   (os-distribution homebrew)
