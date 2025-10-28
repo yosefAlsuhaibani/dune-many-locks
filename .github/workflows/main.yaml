@@ -15,6 +15,7 @@ jobs:
       - run: | 
           opam install dune.3.20.0
           eval $(opam env)
+          ./configure
           dune build
   ubuntu:
     defaults:
@@ -32,6 +33,7 @@ jobs:
       - run: | 
           opam install dune.3.20.0
           eval $(opam env)
+          ./configure
           dune build
   macos:
     defaults:
@@ -49,6 +51,7 @@ jobs:
       - run: | 
           opam install dune.3.20.0
           eval $(opam env)
+          ./configure
           dune build
 name: ci
 on:
