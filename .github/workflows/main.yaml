@@ -16,7 +16,7 @@ jobs:
           opam install dune.3.20.0
           echo "yay"
           eval $(opam env)
-          ./configure
+          ./configure win
           dune build
   ubuntu:
     defaults:
@@ -35,7 +35,7 @@ jobs:
           opam install dune.3.20.0
           echo "yay"
           eval $(opam env)
-          ./configure
+          ./configure ubuntu
           dune build
   macos:
     defaults:
@@ -54,7 +54,7 @@ jobs:
           opam install dune.3.20.0
           echo "yay"
           eval $(opam env)
-          ./configure
+          ./configure mac
           dune build
 name: ci
 on:
