@@ -1,6 +1,4 @@
 (lang dune 3.20)
-(context default)
-
 (pkg enabled)
 
 (lock_dir
@@ -13,7 +11,25 @@
 )
 
 (lock_dir
-  (path "dune-locks/ubuntu-x86")
+  (path "dune-locks/mac-x86_64")
+  (solver_env
+  (os macos)
+  (os-distribution homebrew)
+  (arch x86_64)
+  )
+)
+
+(lock_dir
+  (path "dune-locks/ubuntu-arm64")
+  (solver_env
+  (os linux)
+  (os-family ubuntu)
+  (arch arm64)
+  )
+)
+
+(lock_dir
+  (path "dune-locks/ubuntu-x86_64")
   (solver_env
   (os linux)
   (os-family ubuntu)
@@ -22,7 +38,7 @@
 )
 
 (lock_dir
-  (path "dune-locks/win-x86")
+  (path "dune-locks/windows-x86_64")
   (solver_env
   (os win32)
   (os-distribution cygwin)
