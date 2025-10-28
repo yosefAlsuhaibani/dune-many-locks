@@ -3,7 +3,9 @@
 
 (pkg enabled)
 (lock_dir
+  (solver_env
   (os win32)
   (os-distribution cygwin)
   (arch x86_64)
+  )
 )

@@ -3,7 +3,9 @@
 
 (pkg enbaled)
 (lock_dir
+  (solver_env
   (os linux)
   (os-family ubuntu)
   (arch x86_64)
+  )
 )
