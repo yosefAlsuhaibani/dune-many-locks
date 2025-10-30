@@ -1,8 +1,0 @@
-(version 1)
-
-(build
- (run pkgconf --personality=x86_64-w64-mingw32 libpcre))
-
-(depends conf-pkg-config conf-mingw-w64-gcc-x86_64)
-
-(depexts mingw64-x86_64-pcre)

@@ -23,7 +23,7 @@
    (catch_undefined_var %{pkg:conf-pkg-config:installed} false)
    pkgconf)))
 
-(depends conf-mingw-w64-gcc-x86_64 conf-pkg-config)
+(depends conf-mingw-w64-gcc-x86_64)
 
 (source
  (fetch
