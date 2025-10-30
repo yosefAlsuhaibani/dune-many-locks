@@ -16,7 +16,7 @@ jobs:
           opam install dune.3.20.0
           echo "yay"
           eval $(opam env)
-          ./configure win
+          ./configure windows
           dune build
   ubuntu:
     defaults:
