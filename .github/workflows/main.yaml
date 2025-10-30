@@ -17,7 +17,7 @@ jobs:
           echo "yay"
           eval $(opam env)
           ./configure windows
-          dune build
+          dune exec bogus
   ubuntu:
     defaults:
       run:
@@ -36,7 +36,7 @@ jobs:
           echo "yay"
           eval $(opam env)
           ./configure ubuntu
-          dune build
+          dune exec bogus
   macos:
     defaults:
       run:
@@ -55,7 +55,7 @@ jobs:
           echo "yay"
           eval $(opam env)
           ./configure mac
-          dune build
+          dune exec bogus
 name: ci
 on:
   - push
