@@ -1,23 +1,4 @@
 jobs:
-  windows-debug:
-    defaults:
-      run:
-        shell: bash
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: ocaml/setup-ocaml@v3
-        with:
-          cache-prefix: v2
-          ocaml-compiler: 5.4.0
-          opam-pin: false
-          save-opam-post-run: true
-      - run: | 
-          opam install dune.3.20.0
-          echo "yay"
-          eval $(opam env)
-          dune pkg lock dune-locks/windows-x86_64
-          cat dune-locks/windows-x86_64/*
   windows:
     defaults:
       run:
@@ -35,7 +16,7 @@ jobs:
           opam install dune.3.20.0
           echo "yay"
           eval $(opam env)
-          ./configure windows
+          ln -s dune-locks/windows-x86_64 dune.lock
           dune exec bogus
   ubuntu:
     defaults:
