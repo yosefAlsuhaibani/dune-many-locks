@@ -1,6 +1,6 @@
 os=$1
 arch=$(uname -m)
-echo "$os-$arch"
+echo "Selecting a dune lock directory for $os-$arch"
 case "$os-$arch" in
    "win-x86_64")
 	ln -s dune-locks/win-x86 dune.lock;;
