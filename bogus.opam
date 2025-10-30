@@ -11,7 +11,6 @@ depends: [
   "dune" {>= "3.20"}
   "ocaml"
   "eio_main"
-  "conf-libpcre"
   "odoc" {with-doc}
 ]
 build: [
